@@ -1,0 +1,95 @@
+#main{
+  display: grid;
+  grid-template-rows: repeat(3, 1ft);
+  width: 100vw;
+}
+
+.nav{
+  padding: 2rem 0;
+}
+.logo{
+  margin-left:20px ;
+}
+.imageHero{
+  
+  grid-row: 2/3;
+  background-image:url(../../assets/images/hero-mobile.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  width: 100vw;
+  height: 350px;
+}
+
+.intro {
+  width: 80%;
+  margin: 50px auto;
+}
+.contentCont {
+  margin: auto;
+}
+.titleEspecialWord{
+  color: var(--desaturated-red);
+}
+.title {
+  text-align: center;
+  color: var(--dark-grayish-red);
+  font-size: 3rem;
+  letter-spacing: 10px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.text{
+  text-align: center;
+  font-weight: 400;
+  color: var(--desaturated-red);
+  margin: 30px 0; 
+  line-height: 1.5;
+}
+
+
+@media (min-width : 50em) {
+  
+  #main{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .imageHero{
+    background-image:url(../../assets/images/hero-desktop.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+  }
+  
+  .nav{
+    position: absolute;
+    width: fit-content;
+    left: 10vw;
+  }
+  .logo{
+    margin: 0;
+  }
+
+  .intro {
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10vw;
+    display: flex;
+  }
+  .contentCont{
+    max-width:500px ;
+  }
+  .title {
+    text-align: left;
+  }
+  .text{
+    text-align: left;
+  }
+}
