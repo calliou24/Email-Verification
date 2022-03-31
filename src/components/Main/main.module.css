@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: repeat(3, 1ft);
   width: 100vw;
+  background-image:url(../../assets/images/bg-pattern-desktop.svg) ;
 }
 
 .nav{
